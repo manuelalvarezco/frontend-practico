@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <style>
+    :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --dark: #232830;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .main-container {
+      margin: 24px 0;
+    }
+
+    .cards-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 303px);
+      gap: 26px;
+      place-content: center;
+    }
+
+    .product-card {
+      width: 240px;
+    }
+
+    .product-card img {
+      width: 240px;
+      height: 240px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .product-info figure {
+      margin: 0;
+    }
+    .product-info figure img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .product-info div p:nth-child(1) {
+      font-weight: bold;
+      font-size: var(--md);
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+    .product-info div p:nth-child(2) {
+      font-size: var(--sm);
+      margin-top: 0;
+      margin-bottom: 0;
+      color: var(--very-light-pink);
+    }
+    .product-info div p:nth-child(1) {
+      font-weight: bold;
+      font-size: var(--sm);
+      margin-top: 16px;
+      margin-bottom: 4px;
+    }
+
+    .product {
+      width: 100%;
+    }
+
+    .card{
+      width: 100%;
+      border: 1px solid #DAE4F2;
+      border-radius: 16px;
+    }
+
+    .card-image {
+      height: 348px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-image img {
+      width: 280px;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+      
+    }
+
+    .card-info {
+      padding: 16px 24px;
+      border-top: 1px solid #DAE4F2;
+    }
+
+    .card-info p {
+      margin: 0;  
+    }
+
+    .card-info p:nth-child(1){
+      font-size: 18px;
+      color: #252F3D;
+      font-weight: bold;
+    }
+
+    .card-info p:nth-child(2){
+      font-size: 18px;
+      color: #7C899C;
+    }
+
+    .btn-cta {
+      cursor: pointer;
+      margin-top: 16px;
+      width: 100%;
+      height: 50px;
+      padding: 16px 24px 16px 24px;
+      background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%);
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      border: none;
+      color: white;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    @media (max-width: 640px) {
+      
+      .main-container {
+        margin: 0;
+      }
+
+      .cards-container{
+        padding: 16px;
+        grid-template-columns: repeat(auto-fill, 100%);
+      }
+
+    .product-card {
+      width: 140px;
+    }
+
+    .product-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    }
+  </style>
+</head>
+<body>
+  <section class="main-container">
+    <div class="cards-container">
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/BeatsPro-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Dell X2</p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/CanonEOS5D-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Nikon D300</p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/Chromecast-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Chromecast 3
+            </p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/GoPro-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Go Pro Hero 4
+            </p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/MotoG5-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Moto G5
+            </p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/Nintendo3DS-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Nintendo 3DS
+            </p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/ParrotAR-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Parrot AR
+            </p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/RazerBlackwidow-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Razer Blackwidow
+            </p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+      <div class="product">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/BeatsPro-x2.png" alt="product">
+          </div>
+          <div class="card-info">
+            <p>Beats Pro
+            </p>
+            <p>product type
+</p>
+          </div>
+        </div>
+        <button class="btn-cta">Redeem for 12.500</button>
+      </div>      
+    </div>
+  </section>
+</body>
+</html>
